@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <head>
+    <meta charset="utf-8">
     <title>Sunflower Systems</title>
     <style>
         :root {
@@ -40,6 +41,16 @@
             color: #333;
         }
 
+        .links {
+            font-family: sans-serif;
+            font-weight: lighter;
+            color: #333;
+        }
+
+        .links>a {
+            padding: 0 1em;
+        }
+
         .items {
             display: flex;
             flex-direction: column;
@@ -58,6 +69,7 @@
         <div class="items">
             <div class="sunflower">🌻</div>
             <h1>Sunflower Systems</h1>
+            <p class="links">[<a href="{{ get_url(path='@/blog/_index.md') }}">blog</a>]</p>
         </div>
     </main>
 </body>
